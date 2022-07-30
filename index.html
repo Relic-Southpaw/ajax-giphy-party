@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    h1 {
+      margin: auto;
+      border: 3px dotted white;
+      text-align: center;
+      font-size: 3em;
+      padding: 20px;
+      color: white;
+      letter-spacing: 10px;
+      word-spacing: 30px;
+    }
+
+    #inputs {
+      text-align: center;
+      padding: 20px;
+      font-size: 5em;
+      color: white;
+      display: inline;
+    }
+
+    #gifTxt {
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-flex;
+      box-sizing: content-box;
+    }
+
+    #search {
+      border-radius: 5px;
+      font-size: 20px;
+      padding: 10px;
+      background-color: slategray;
+      color: white;
+      display: inline-flex;
+      box-sizing: content-box;
+    }
+
+    #rmBtn {
+      border-radius: 5px;
+      font-size: 20px;
+      padding: 10px;
+      background-color: orangered;
+      color: white;
+      display: inline-flex;
+      box-sizing: content-box;
+    }
+
+    #search:hover {
+      border: 2px solid springgreen;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+      box-sizing: content-box;
+    }
+
+    #rmBtn:hover {
+      border: 2px solid yellow;
+      border-radius: 5px;
+      background-color: brown;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>GIPHY PARTY</h1>
+  <div id="inputs">
+    <input type="text" id="gifTxt">
+    <button id="search">Search Giphy!</button>
+    <button id="rmBtn">Remove Images</button>
+  </div>
+  <br>
+  <div id="gifBox"></div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
